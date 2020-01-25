@@ -1,0 +1,44 @@
+h1 {
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(3, 169, 244);
+    text-align: center;
+}
+button{
+    width: 75%;
+    margin: auto;
+    display: block;
+    padding: .5em;
+    font-size: 1em;
+    background: #FFFFFF99;
+    border: 1px solid black;
+    border-radius: .25em;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+}
+button:focus,
+button:hover {
+    background: #FFFFFF00;  
+}
+.posts-container {
+    background-color: white;
+    border: 1px solid black;
+    border-radius: .25rem;
+    width: 75%;
+    margin: 1rem auto 3rem auto; 
+}
+.black-box {
+    position: absolute;
+    background-color: black;
+    opacity: 75%;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;  
+}
+
+app-post-form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

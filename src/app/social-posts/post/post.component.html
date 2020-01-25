@@ -1,0 +1,17 @@
+<div class='post-container'>
+    <div class="post-content">
+        <div class="post-title">
+            {{ post.title }}
+        </div>
+        <div class="post-thought">
+            {{ post.thought }}
+        </div>
+    </div>
+    <div class="trash-icon-container">
+        <i class="material-icons" (click)='deletePost()'>delete</i>
+    </div>
+    
+</div>
+<hr *ngIf='divider'> 
+
+

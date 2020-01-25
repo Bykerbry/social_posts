@@ -1,0 +1,14 @@
+<div class="post-form-container">
+    <form>
+        <div class="form-container title-container">
+            <label for="title">Title</label>
+            <input autofocus [(ngModel)]="newTitle" class="form-style" type="text" id="title" name='title'>
+        </div>
+        <div class="form-container thought-container">
+            <label for="thought">Thought</label>
+            <textarea [(ngModel)]="newThought" class="form-style" name="thought" id="thought" cols="30" rows="6"></textarea>
+        </div>
+        <button type="button" class="add-btn" (click)='submitPost(newTitle, newThought)'>Add</button> 
+    </form>
+</div>
+

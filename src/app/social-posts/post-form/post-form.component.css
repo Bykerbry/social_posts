@@ -1,0 +1,46 @@
+.post-form-container {
+    background-color: #F3F1F7; 
+    width: 50vw;
+    border-radius: .25rem;
+}
+form {
+    display: flex;
+    flex-direction: column; 
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+    margin-left: 2rem; 
+}
+.title-container {
+    margin-top: 1rem;
+}
+.form-style {
+    border-radius: .25rem;
+    border: 1px solid black;
+    height: 1.5rem;
+    padding-left: .75em;
+    padding-right: .75em; 
+    font-size: 1rem;
+}
+#thought{
+    padding-top: .5em;
+    height: auto;
+}
+label{
+    margin-bottom: .25em;
+    margin-top: .25em;
+}
+.add-btn{
+    background: #FFFFFF99;
+    border: 1px solid black;
+    padding: .5em;
+    margin: 2em;
+    border-radius: .25rem;
+    font-size: 1rem;
+}
+.add-btn:focus,
+.add-btn:hover {
+    background: #FFFFFF00; 
+}
