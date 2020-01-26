@@ -22,12 +22,10 @@ export class SocialPostsComponent implements OnInit {
   }
   
   onSubmit(post:IPost) {
-    console.log('onSubmit called');
     this.posts.push(post);
     this.addingThought = false;
   }
   onDelete(index: number) {
-    console.log('onDelete Called');
     this.posts.splice(index, 1); 
   }
   addNewThought(e: Event) {

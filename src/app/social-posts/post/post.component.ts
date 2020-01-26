@@ -13,6 +13,7 @@ export class PostComponent implements OnInit {
   @Input() post: IPost
   @Input() divider: boolean
   @Input() currentIndex: number
+  
   @Output() deleted = new EventEmitter<number>();
 
   upVoteCount: number = 0;
@@ -21,12 +22,10 @@ export class PostComponent implements OnInit {
 
   ngOnInit() {
   }
-  deletePost():void {
-    console.log(this.currentIndex);  
+  deletePost():void {  
     this.deleted.emit(this.currentIndex) 
   }
   upVotePost() {
-    console.log(this.upVoteCount);
     this.upVoteCount++
   }
 

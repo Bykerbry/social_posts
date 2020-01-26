@@ -12,10 +12,7 @@ export class PostFormComponent implements OnInit {
 
   constructor() { }
 
-  submitPost(newTitle: string, newThought: string):void {
-    console.log('submitPost called');
-    console.log(newTitle, newThought);
-    console.log({title: newTitle, thought: newThought}); 
+  submitPost(newTitle: string, newThought: string):void { 
     this.submitted.emit({title: newTitle, thought: newThought}); 
   }  
 

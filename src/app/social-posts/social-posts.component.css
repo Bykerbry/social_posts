@@ -35,9 +35,6 @@ button:hover {
     top: 0;
     left: 0;  
 }
-:host() {
-    display: block;
-}
 
 app-post-form{
     position: absolute;
