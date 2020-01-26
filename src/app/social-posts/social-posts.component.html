@@ -8,9 +8,9 @@
     (deleted)='onDelete($event)'>
     </app-post>
 </div> 
-<div *ngIf='addingThought' class="post-form-container">
-    <div class="black-box"></div>
-    <app-post-form (submitted)='onSubmit($event)'></app-post-form> 
+<div class="post-form-container">
+    <div *ngIf='addingThought' @fade class="black-box"></div>
+    <app-post-form *ngIf='addingThought' @slideUp (submitted)='onSubmit($event)'></app-post-form> 
 </div>
 
 

@@ -8,7 +8,7 @@ import { IPost } from '../post.interface'
 })
 export class PostFormComponent implements OnInit {
 
-  @Output() submitted = new EventEmitter<any>();
+  @Output() submitted = new EventEmitter<IPost>(); 
 
   constructor() { }
 

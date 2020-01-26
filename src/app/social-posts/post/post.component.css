@@ -7,6 +7,16 @@
 .post-title {
     font-size: 1.5rem;
 }
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+.icon-container > span {
+    margin-right: .25rem;
+}
+.material-icons {
+    margin: 0 .5rem;
+}
 i:hover{
    cursor: pointer;
    opacity: .5;

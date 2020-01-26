@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import { IPost } from './post.interface'
+import { slideUp, fade } from './animations'
 
 @Component({
   selector: 'app-social-posts',
   templateUrl: './social-posts.component.html',
-  styleUrls: ['./social-posts.component.css']
-})
+  styleUrls: ['./social-posts.component.css'],
+  animations: [slideUp, fade]
+}) 
 export class SocialPostsComponent implements OnInit {
 
   posts: IPost[];
@@ -19,7 +21,7 @@ export class SocialPostsComponent implements OnInit {
     ]
   }
   
-  onSubmit(post:any):void {
+  onSubmit(post:IPost) {
     console.log('onSubmit called');
     this.posts.push(post);
     this.addingThought = false;
@@ -33,7 +35,6 @@ export class SocialPostsComponent implements OnInit {
     target.blur();
     this.addingThought = true;
   }
-
   ngOnInit() {
   }
 
