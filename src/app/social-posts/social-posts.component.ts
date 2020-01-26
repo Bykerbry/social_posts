@@ -15,9 +15,9 @@ export class SocialPostsComponent implements OnInit {
 
   constructor() { 
     this.posts = [
-      {title:'Title 1', thought:'Thought 1' },
-      {title:'Title 2', thought:'Thought 2' },
-      {title:'Title 3', thought:'Thought 3' }
+      {title:'Title 1', thought:'Thought 1', upVotes: 0 },
+      {title:'Title 2', thought:'Thought 2', upVotes: 0 },
+      {title:'Title 3', thought:'Thought 3', upVotes: 0 }
     ]
   }
   

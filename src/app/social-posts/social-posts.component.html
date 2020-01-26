@@ -1,7 +1,7 @@
 <h1>My Thoughts</h1>
 <button (click)='addNewThought($event)'>New Thought</button>
 <div *ngIf='posts.length > 0' class="posts-container"> 
-    <app-post *ngFor='let post of posts; let i = index; last as isLast' 
+    <app-post *ngFor='let post of posts | sortByVotes; let i = index; last as isLast' 
     [currentIndex]='i' 
     [post]='post' 
     [divider]='!isLast' 

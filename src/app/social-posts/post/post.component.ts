@@ -13,10 +13,8 @@ export class PostComponent implements OnInit {
   @Input() post: IPost
   @Input() divider: boolean
   @Input() currentIndex: number
-  
-  @Output() deleted = new EventEmitter<number>();
 
-  upVoteCount: number = 0;
+  @Output() deleted = new EventEmitter<number>();
 
   constructor() { }
 
@@ -25,8 +23,8 @@ export class PostComponent implements OnInit {
   deletePost():void {  
     this.deleted.emit(this.currentIndex) 
   }
-  upVotePost() {
-    this.upVoteCount++
+  upVotePost(post: IPost) {
+    post.upVotes++
   }
 
 

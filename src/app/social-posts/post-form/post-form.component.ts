@@ -13,7 +13,11 @@ export class PostFormComponent implements OnInit {
   constructor() { }
 
   submitPost(newTitle: string, newThought: string):void { 
-    this.submitted.emit({title: newTitle, thought: newThought}); 
+    this.submitted.emit({
+      title: newTitle, 
+      thought: newThought, 
+      upVotes: 0
+    }); 
   }  
 
   ngOnInit() {
